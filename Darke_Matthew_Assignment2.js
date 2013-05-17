@@ -2,7 +2,7 @@
 
 //By Matthew Darke
 //SDI 1304 
-//Projec2 
+//Project2 
 
 //Variables
 var carnivalName = "Fall County Carnival";
@@ -34,9 +34,9 @@ function AccomplishesGoalFor(Pie, HotDog, Pizza ) {
     return true;
 };
 // Number function last year champ trys to beat her record
-var countupPies = function(what, Howmany) {
+var countup = function(What, Howmany) {
 	
-	for (pies = 0; pies>20; pies =+5){
+	for ( pies = 0; pies >= 20; pies =+5){
 	
 	console.log(pies + "Scarffed down.");
 	
@@ -54,9 +54,9 @@ var countupPies = function(what, Howmany) {
 }
 countup("pies", 20);
 
-var countupHotDogs = function(what, Howmany)
+var countup = function(What, Howmany) {
     
-    for (HotDogs = 0; HotDogs>40; HotDogs =+5){
+    for (HotDogs = 0; HotDogs >= 40; HotDogs =+5){
 	    
     console.log(Hotdogs + "Scarffed down.");
 	
@@ -72,11 +72,11 @@ var countupHotDogs = function(what, Howmany)
       console.log(" ");
      }
 }
- countup("HotDogs", 40);   
+ countup( " HotDogs ", 40);   
  
- var countupPizza = function(what, Howmany)
+ var countup = function(what, Howmany) {
     
-    for (Pizza = 0; Pizza>50; Pizza =+5){
+    for (Pizza = 0; Pizza >= 50; Pizza =+5){
 	 
  console.log(Pizza + "Scarffed down.");
 	
@@ -92,7 +92,9 @@ var countupHotDogs = function(what, Howmany)
       console.log(" ");
      }
 }
- countup("HotDogs", 50);   
+ countup("Pizza", 50);   
+
+// string function
 
     
     
@@ -113,8 +115,8 @@ var countupHotDogs = function(what, Howmany)
     
     
     
-    }
-}
+    
+
 
 
 
