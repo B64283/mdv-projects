@@ -95,7 +95,11 @@ var countup = function(What, Howmany) {
  countup("Pizza", 50);   
 
 // string function
-
+function HerGoal(PieRecord, HotDogRecord, PizzaRecord ) {
+	var LastYearsChamp = "Allison";
+	    string = LastYearsChamp + " is bound and determined to beat her " + PieRecord + " by 5 and her " + HotDogRecord + " by 5 and her " + PizzaRecord + " by 5 ";
+  return  string
+}   
     
     
     
@@ -115,12 +119,6 @@ var countup = function(What, Howmany) {
     
     
     
-    
-
-
-
-
-
 
 
 
@@ -131,22 +129,27 @@ var countup = function(What, Howmany) {
 
 
 
-// for loop
-//var ContestNames = [ "Pie eating contest", "Hotdog eating contest", "Pizza eating contest" ],
-   // GoalsPerContest = [ 25, 45, 55 ],
-//for (var ContestNumber = 0; ContestNumber < ContestNames.length; ContestNumber ++) {
-   // var ContestName = ContestNames[ContestNumber],
-	  //  GoalThisContest = GoalsPerContest[ContestNumber];
-    //console.log( " So " + KidsName + " Starts the " + ContestName + " to reach a goal of "  + GoalThisContest + " to win.");
-  //  for (var Kids = 0; Kids < KidsName; Kids ++) {
-  //  for (var Goal = 0; Goal < GoalsPerContest; Goal ++)
-  //  var Goalremain = GoalThisContest - Goal;
-	//console.log(Goal + " finish, " + Goalremain + " Left! ");   
-   //// }
-//console.log( "And " + KidsName + " reached goal and won the " + ContestName + ".");
-//}
-//}
-//
+
+
+
+
+
+ Array w/ for loop
+var ContestNames = [ "Pie eating contest", "Hotdog eating contest", "Pizza eating contest" ],
+    GoalsPerContest = [ 25, 45, 55 ],
+for (var ContestNumber = 0; ContestNumber < ContestNames.length; ContestNumber ++) {
+    var ContestName = ContestNames[ContestNumber],
+	    GoalThisContest = GoalsPerContest[ContestNumber];
+    console.log( " So " + KidsName + " Starts the " + ContestName + " to reach a goal of "  + GoalThisContest + " to win.");
+    for (var Kids = 0; Kids < KidsName; Kids ++) {
+    for (var Goal = 0; Goal < GoalsPerContest; Goal ++)
+    var Goalremain = GoalThisContest - Goal;
+	console.log(Goal + " finish, " + Goalremain + " Left! ");   
+    }
+console.log( "And " + KidsName + " reached goal and won the " + ContestName + ".");
+}
+}
+
 
 
 
