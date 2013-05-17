@@ -11,11 +11,11 @@ var ContestNames = [
     "Hotdog eating contest",
     "Pizza eating contest" ];
 var KidsName = "Allison";
-var GoalsPerContest = [25, 45, 55];
+var ThisYearsGoals = [25, 45, 55];
 var FoodLastYear = [20, 40, 50];
 var IntroStory = "Allison is going to the " + carnivalName +  " Last year she won three eating contests ";
 
-// Procedure
+// Procedure 
 function eatingcontest(enter) {
      if (enter === true) { 
 	     console.log(" This year " + KidsName + " is entering an eating contest at the " + carnivalName + " to try to beat her record ")
@@ -24,23 +24,97 @@ function eatingcontest(enter) {
 	     }
 };	     
 
-
-
-
-
-
 //Boolean
 function AccomplishesGoalFor(Pie, HotDog, Pizza ) {
 	if (Pie && !(HotDog || Pizza)) {
 		console.log(" the eating contest champ is " + KidsName + " And all she could do now is puke " ) 
-	} els {
-	    Console.log ("she goes home with a belly ache!" );
+	} else {
+	    Console.log ("she goes home with a bellyache!" );
     }
     return true;
+};
+// Number function last year champ trys to beat her record
+var countupPies = function(what, Howmany) {
+	
+	for (pies = 0; pies>20; pies =+5){
+	
+	console.log(pies + "Scarffed down.");
+	
+	if (pies<20) {
+	
+      	    consloe.log("she ate five more to win the high score");
+        
+        } else { 
 
+             console.log(KidsName + " asks why do I do this to myself ? "); 
 
+        } 
+      console.log(" ");
+     }
+}
+countup("pies", 20);
 
+var countupHotDogs = function(what, Howmany)
+    
+    for (HotDogs = 0; HotDogs>40; HotDogs =+5){
+	    
+    console.log(Hotdogs + "Scarffed down.");
+	
+	if (Pizza<40) {
+	
+      	    consloe.log("she ate five more to win the high score");
+        
+        } else { 
 
+             console.log(KidsName + " asks why do I do this to myself ? "); 
+
+        } 
+      console.log(" ");
+     }
+}
+ countup("HotDogs", 40);   
+ 
+ var countupPizza = function(what, Howmany)
+    
+    for (Pizza = 0; Pizza>50; Pizza =+5){
+	 
+ console.log(Pizza + "Scarffed down.");
+	
+	if (Pizza<50) {
+	
+      	    consloe.log("she ate five more to win the high score");
+        
+        } else { 
+
+             console.log(KidsName + " asks why do I do this to myself ? "); 
+
+        } 
+      console.log(" ");
+     }
+}
+ countup("HotDogs", 50);   
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+}
 
 
 
