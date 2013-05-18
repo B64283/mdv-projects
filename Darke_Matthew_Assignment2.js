@@ -13,130 +13,79 @@ var ContestNames = [
 var KidsName = "Allison";
 var ThisYearsGoals = [25, 45, 55];
 var FoodLastYear = [20, 40, 50];
-var IntroStory = "Allison is going to the " + carnivalName +  " Last year she won three eating contests ";
-
+var StartStory = "Allison is going to the " + carnivalName +  " Last year she won three eating contests! ";
+var enter = true
+var SheWins = true
 // Procedure 
 function eatingcontest(enter) {
      if (enter === true) { 
-	     console.log(" This year " + KidsName + " is entering an eating contest at the " + carnivalName + " to try to beat her record ")
+	     console.log(" This year " + KidsName + " is entering an eating contest at the " + carnivalName + " to try to beat her record lats year. ")
      } else { 
          console.log (" theres always next year for " + KidsName + " to try to beat her record. ") 
 	     }
 };	     
 
 //Boolean
-function AccomplishesGoalFor(Pie, HotDog, Pizza ) {
-	if (Pie && !(HotDog || Pizza)) {
-		console.log(" the eating contest champ is " + KidsName + " And all she could do now is puke " ) 
+function WinsAgain() {
+	if (SheWins === true) {
+	console.log(" the eating contest champ is " + KidsName + " And all she could do now is puke " ); 
 	} else {
 	    Console.log ("she goes home with a bellyache!" );
     }
-    return true;
-};
+    };
+    
 // Number function last year champ trys to beat her record
-var countup = function(What, Howmany) {
-	
-	for ( pies = 0; pies >= 20; pies =+5){
-	
-	console.log(pies + "Scarffed down.");
-	
-	if (pies<20) {
-	
-      	    consloe.log("she ate five more to win the high score");
-        
-        } else { 
 
-             console.log(KidsName + " asks why do I do this to myself ? "); 
-
-        } 
-      console.log(" ");
-     }
-}
-countup("pies", 20);
-
-var countup = function(What, Howmany) {
-    
-    for (HotDogs = 0; HotDogs >= 40; HotDogs =+5){
-	    
-    console.log(Hotdogs + "Scarffed down.");
+function countdown(){
+var Soc = 10;
+while (Soc > 0) {
+    console.log(Soc + "seconds on the clock");
+    Soc--;
+    };
+    console.log("seconds on the clock.");
+    console.log("Begin Eating!!");
+	}
 	
-	if (Pizza<40) {
-	
-      	    consloe.log("she ate five more to win the high score");
-        
-        } else { 
-
-             console.log(KidsName + " asks why do I do this to myself ? "); 
-
-        } 
-      console.log(" ");
-     }
-}
- countup( " HotDogs ", 40);   
- 
- var countup = function(what, Howmany) {
-    
-    for (Pizza = 0; Pizza >= 50; Pizza =+5){
-	 
- console.log(Pizza + "Scarffed down.");
-	
-	if (Pizza<50) {
-	
-      	    consloe.log("she ate five more to win the high score");
-        
-        } else { 
-
-             console.log(KidsName + " asks why do I do this to myself ? "); 
-
-        } 
-      console.log(" ");
-     }
-}
- countup("Pizza", 50);   
+  
  
 // string function
-function HerGoal(PieRecord, HotDogRecord, PizzaRecord ) {
+function HerGoal() {
 	var LastYearsChamp = "Allison";
-	    string = LastYearsChamp + " is bound and determined to beat her " + PieRecord + " by 5 and her " + HotDogRecord + " by 5 and her " + PizzaRecord + " by 5 ";
-  return String
-}   
+	 var FoodLastYear =  [20, 40, 50]; 
+	    console.log (LastYearsChamp + " is bound and determined to beat her last year records " + FoodLastYear +  " by 5 ");
+ 
+ 
+ }; 
+  
+   
     
 //Array w/ for loop
 
+var EnterOneContest = function() {
 var ContestNames = [ "Pie eating contest", "Hotdog eating contest", "Pizza eating contest" ],
     GoalsPerContest = [ 25, 45, 55 ];
-var EnterOneContest = function() {
-	 
-var ContestName = ContestNames[ContestNumber],
-	    GoalThisContest = GoalsPerContest[ContestNumber];
-     console.log( " So " + KidsName + " Starts the " + ContestName + " to reach a goal of "  + GoalThisContest + " to win.");
-    for (var Goals = 0; Goals < GoalsPerContest; Goals += 5) {
+ for (var ContestNumber = 0; ContestNumber < ContestNames.length; ContestNumber++) {
+      var ContestName = ContestNames[ContestNumber],
+	   GoalThisContest = GoalsPerContest[ContestNumber];
+    console.log( " So " + KidsName + " Starts the " + ContestName + " to reach a goal of "  + GoalThisContest + " to win.");
+    for (var Goals = 0; Goals < GoalsPerContest; Goals ++) {
     var Goalremain = GoalThisContest - Goals;
 	console.log(Goal + " scarffed down, " + Goalremain + " to go! ");   
     }
-    console.log( "And " + KidsName + " reached goal and won the " + ContestName + ".");
-};
-for (var ContestNumber = 0; ContestNumber < ContestNames.length; ContestNumber++) {
-   
-   }
+    console.log( " And " + KidsName + " reached goal and won the " + ContestName + ".");   
+
+
+};   
+}
 //output
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log (StartStory);
+eatingcontest(enter);
+HerGoal()
+console.log(" as nervious as can be " + KidsName + " is ready to start as she waits for the count down! ")
+countdown()
+EnterOneContest()
+WinsAgain()
 
 
 
